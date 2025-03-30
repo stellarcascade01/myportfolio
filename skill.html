@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1><span class="first-name">She</span> <span class="last-name">Fa.</span></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html" class="active">Skill</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="contact.html">Contact</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <section id="skill">
+        <div class="skill-container">
+            <div class="skill-category">
+                <h2>Technical Skills</h2>
+                <div class="skill">
+                    <p>HTML & CSS</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                        <span class="progress-text">80%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>PCB Design</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                        <span class="progress-text">70%</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skill-category">
+                <h2>Software Skills</h2>
+                <div class="skill">
+                    <p>KiCad</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                        <span class="progress-text">70%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Proteus</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                        <span class="progress-text">75%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Adobe Illustrator</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                        <span class="progress-text">75%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>MATLAB</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                        <span class="progress-text">65%</span>
+                    </div>
+                </div>
+            </div>
+    
+            
+        
+            <div class="skill-category">
+                <h2>Languages</h2>
+                <div class="skill">
+                    <p>Bangla</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                        <span class="progress-text">95%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>English</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                        <span class="progress-text">80%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Korean</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                        <span class="progress-text">80%</span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Japanese</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                        <span class="progress-text">80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2025 Shefa. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let progressBars = document.querySelectorAll(".progress");
+    
+            function animateBars() {
+                progressBars.forEach(bar => {
+                    let width = bar.getAttribute("style").match(/\d+/)[0] + "%";
+                    bar.style.width = "0"; // Reset width to 0
+                    setTimeout(() => {
+                        bar.style.width = width;
+                    }, 500);
+                });
+            }
+    
+            // Run animation when page loads
+            animateBars();
+        });
+    </script>
+
+</body>
+</html>
